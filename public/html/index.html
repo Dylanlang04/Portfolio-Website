@@ -10,12 +10,12 @@
     
     <title>Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
     </head>
 <body>
 
 <div id="particles-js"></div>
-<div id="particles-js2"></div>
-<div id="particles-js3"></div>
+
 
 <div class="navbar">
     <b>Dylan's Portfolio</b>
@@ -96,9 +96,28 @@
 </div>
 
 <div id="contact">
-
-    <div class="par6">Send me your contect: </div>
-    
+    <form id="contact-form">
+        <div class="test">Send your contact info directly to me: </div>
+        
+        <input type="hidden" name="time" value="Mar 10 2025 08:46">
+        
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" name="name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="info">(Optional) Other info:</label>
+            <div class="textarea-wrapper">
+                <textarea id="info" name="info" rows="4" maxlength="200"></textarea>
+                <span id="char-count">200</span>
+            </div>
+        </div>
+        <input type="submit" value="Send">
+    </form>
 
 
 
@@ -115,7 +134,12 @@
     
 </div>
 
+
+
 <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+
+<script src='/js/email.js'></script>
 <script src='/js/main.js'></script>
 <script src="/plugins/particles.js"></script>
 

@@ -1,23 +1,27 @@
 
 document.addEventListener('DOMContentLoaded', function() {
   const icons = document.querySelectorAll('.icon');
-  const observer = new IntersectionObserver((entries, observer) => {
-    entries.forEach((entry, index) => {
-      if (entry.isIntersecting) {        
-        const animationSpeed = '1s'
-        entry.target.style.animationDuration = animationSpeed
-        entry.target.style.visibility = 'visible'
-        entry.target.style.animation = `fadeIn ${animationSpeed} forwards ${0.2 * (index + 1)}s`
-        observer.unobserve(entry.target)
-      }
-    })
-  }, { threshold: 0.1 })
-      
+
+  const observer = new IntersectionObserver((entries) => {
+    requestAnimationFrame(() => {
+      entries.forEach((entry, index) => {
+        if (entry.isIntersecting) {
+          entry.target.style.visibility = 'visible';
+          entry.target.style.animation = `fadeIn 1s forwards ${0.3 * (index + 1)}s`;
+        } else {
+          // Reset animation when the element leaves the viewport
+          entry.target.style.animation = 'none';
+          entry.target.style.visibility = 'hidden';
+        }
+      });
+    });
+  }, { threshold: 0.1 });
+  
   icons.forEach(icon => {
-    icon.style.visibility = 'hidden'
-    icon.style.opacity = 0 
-    observer.observe(icon)
-  })
+    icon.style.visibility = 'hidden';
+    observer.observe(icon);
+  });
+
         
   function initParticles(id) {
     if (!document.getElementById(id)) {
@@ -29,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function() {
     particlesJS(id, {
       "particles": {
         "number": {
-          "value": 360,
+          "value": 200,
           "density": {
             "enable": true,
             "value_area": 800
@@ -58,7 +62,7 @@ document.addEventListener('DOMContentLoaded', function() {
           "random": true,
           "anim": {
             "enable": true,
-           "speed": 1,
+           "speed": 0.5,
            "opacity_min": 0,
            "sync": false
           }
@@ -175,9 +179,13 @@ document.addEventListener('DOMContentLoaded', function() {
   })
   
   initParticles("particles-js")  
-  initParticles("particles-js2")  
-  initParticles("particles-js3")
 
-
-   
+  const textarea = document.getElementById("info")
+  const charCount = document.getElementById("char-count")
+  
+  textarea.addEventListener("input", () => {
+      const maxLength = textarea.getAttribute("maxlength")
+      const currentLength = textarea.value.length
+      charCount.textContent = maxLength - currentLength
+  })
 })

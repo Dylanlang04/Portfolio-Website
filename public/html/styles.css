@@ -403,3 +403,74 @@ body {
     top: 200px;
     left: 10%;  
 }
+#contact-form {
+    margin-left: 400px;
+    margin-top: 180px;
+    max-width: 30%;
+    z-index: 2;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+#contact-form label {
+    color: white;
+    width:20%;
+}
+#contact-form input {
+    color:#ffffff;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 80%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    padding: 5px;
+  }
+#contact-form button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    
+    cursor: pointer;
+}
+.textarea-wrapper {
+    width:80%;
+    color: #000000;
+    margin-right: 20px;
+    position: relative;
+    
+}
+.textarea-wrapper textarea {
+    overflow-wrap: break-word; /* Ensures long words wrap */
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.textarea-wrapper #char-count {
+    position: absolute;
+    bottom: 8px;
+    right: -5px;
+    font-size: 12px;
+    color: #050505;
+}
+
+#contact-form input[type=submit] {
+    color: #000000;
+    cursor: pointer;
+}
+.test {
+    margin-right: 140px;
+    color: white;
+}
+
