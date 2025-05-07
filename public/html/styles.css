@@ -446,7 +446,7 @@ body {
     
 }
 .textarea-wrapper textarea {
-    overflow-wrap: break-word; /* Ensures long words wrap */
+    overflow-wrap: break-word;
     word-wrap: break-word;
     white-space: pre-wrap;
     

@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
           entry.target.style.visibility = 'visible';
           entry.target.style.animation = `fadeIn 1s forwards ${0.3 * (index + 1)}s`;
         } else {
-          // Reset animation when the element leaves the viewport
+          
           entry.target.style.animation = 'none';
           entry.target.style.visibility = 'hidden';
         }

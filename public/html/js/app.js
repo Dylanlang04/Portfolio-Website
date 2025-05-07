@@ -1,4 +1,4 @@
-//FA9134E2C2CD3D7E50287F8B776D90F266F1
+
 //template for particles.
 particlesJS('particles-js',
     {
