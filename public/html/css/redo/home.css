@@ -1,0 +1,583 @@
+
+#particles-js {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 65%;
+    transform: scale(0.1);
+    opacity: 0;
+    transition: all .5s ease-out;
+    z-index: 1;
+}
+#particles-js.loaded {
+    transform: scale(1);
+    opacity: 1;
+}
+@media (max-width: 599.98px) {
+    html, body {
+        position: relative;
+        margin:0;
+        padding:0;
+        width:100%;
+        height:100%;
+        overflow-x: hidden;
+    }
+   
+    #background {
+        position: absolute;
+        top: 0;
+        left:0;
+        width:100%;
+        height:100%;
+        object-fit: cover;
+    }
+    #navbar {
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top:2%;
+        left:4%;
+        width: 92%;
+        height: 6%;
+        background-color: #0a152b;
+        z-index: 1000;
+    }
+    #nav-links {
+        position: inherit;
+        right: 6%;
+        display: flex;
+        font-size: 10px;
+        gap: 5px;
+    }
+    #nav-links a {
+        font-family: "Bad Script", serif;
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+    }
+    #title_wrap {
+        position: inherit;
+        font-size: 20px;
+        color: white;
+        left:6%;
+    }
+    #wrapper {
+        position: absolute;
+        width:100%;
+        display: flex;
+        justify-content: center;
+        top:55%;
+        
+    }
+    #wrapper .parallax-wrapper {
+        position: relative;
+        border-radius: 50%;
+        
+        width: 200px;
+        height:200px;
+        justify-content: center;
+        background-color: #ffffff; 
+        overflow: hidden; 
+        z-index: 2;
+    }
+    .parallax {
+        position: absolute;
+        width: 120%;
+        height: 120%;
+        top: -10%;  
+        left: -10%;
+        object-fit: cover; 
+        transition: transform 0.1s ease-out; 
+        z-index: 2;
+    }
+    #social-links {
+        position: absolute;
+        top:102%;
+        width: 100%;
+        justify-content: center;
+        z-index: 3;
+        gap: 5px;
+        display:flex;
+    }
+    
+    #social-links img {
+        width: 40px;
+        height: auto;
+    }
+    
+    
+    
+    
+    .front-text {
+        position: absolute;
+        top:25%;
+        width: 100%;
+        display:flex;
+        justify-content: center;
+        font-family: "Sigmar", serif;
+    
+        
+    }
+    .front-text h1 {
+        justify-content: center;
+        font-size: 16px;
+        font-weight: bold;
+        color: rgb(12, 63, 139);
+        
+    }
+    .front-text .firstline {
+        position: absolute;
+        font-size: 32px;
+        font-weight: bold;
+        font-family: "Sour Gummy", serif;
+        color: rgb(255, 255, 255);
+        top: 0px;
+        
+    }
+    .front-text .secondline {
+        position: absolute;
+        color: rgb(255, 255, 255);
+        font-family: "Sour Gummy", serif;
+        font-size: 32px;
+        font-weight: bold;
+        top: 30px;
+        
+    }
+    .front-text .thirdline {
+        position: absolute;
+        color: rgb(255, 255, 255);
+        font-family: "Sour Gummy", serif;
+        top: 60px;
+        font-size: 32px;
+        font-weight: bold;
+       
+    }
+}
+
+
+
+
+
+@media (min-width: 600px) and (max-width: 767.98px) {
+    html, body {
+        position: relative;
+        margin:0;
+        padding:0;
+        width:100%;
+        height:100%;
+        overflow-x: hidden;
+    }
+   
+    #background {
+        position: absolute;
+        top: 0;
+        left:0;
+        width:100%;
+        height:100%;
+        object-fit: cover;
+    }
+    #navbar {
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top:2%;
+        left:4%;
+        width: 92%;
+        height: 6%;
+        background-color: #0a152b;
+        z-index: 1000;
+    }
+    #nav-links {
+        position: inherit;
+        right: 6%;
+        display: flex;
+        font-size: 14px;
+        gap: 5px;
+    }
+    #nav-links a {
+        font-family: "Bad Script", serif;
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+    }
+    #title_wrap {
+        position: inherit;
+        font-size: 24px;
+        color: white;
+        left:6%;
+    }
+    #wrapper {
+        position: absolute;
+        width:100%;
+        display: flex;
+        justify-content: center;
+        top:55%;
+        
+        
+    }
+    #wrapper .parallax-wrapper {
+        position: relative;
+        border-radius: 50%;
+        
+        width: 200px;
+        height: 200px;
+        
+        background-color: #ffffff; 
+        overflow: hidden; 
+        z-index: 2;
+    }
+    .parallax {
+        position: absolute;
+        width: 120%;
+        height: 120%;
+        top: -10%;  
+        left: -10%;
+        object-fit: cover; 
+        transition: transform 0.1s ease-out; 
+        z-index: 2;
+    }
+    #social-links {
+        position: absolute;
+        top:102%;
+        width: 100%;
+        justify-content: center;
+        z-index: 3;
+        gap: 5px;
+        display:flex;
+    }
+    
+    #social-links img {
+        width: 40px;
+        height: auto;
+    }
+    
+    
+    
+    
+    .front-text {
+        position: absolute;
+        top:27%;
+        width: 100%;
+        display:flex;
+        justify-content: center;
+        font-family: "Sigmar", serif;
+    
+        
+    }
+    .front-text h1 {
+        justify-content: center;
+        font-size: 24px;
+        color: rgb(12, 63, 139);
+        
+    }
+    .front-text .firstline {
+        position: absolute;
+        font-size: 40px;
+        font-weight: bold;
+        font-family: "Sour Gummy", serif;
+        color: rgb(255, 255, 255);
+        top: 0px;
+        
+    }
+    .front-text .secondline {
+        position: absolute;
+        color: rgb(255, 255, 255);
+        font-family: "Sour Gummy", serif;
+        font-size: 40px;
+        font-weight: bold;
+        top: 30px;
+        
+    }
+    .front-text .thirdline {
+        position: absolute;
+        color: rgb(255, 255, 255);
+        font-family: "Sour Gummy", serif;
+        top: 60px;
+        font-size: 40px;
+        font-weight: bold;
+       
+    }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+    html, body {
+        position: relative;
+        margin:0;
+        padding:0;
+        width:100%;
+        height:100%;
+        overflow-x: hidden;
+    }
+   
+    #background {
+        position: absolute;
+        top: 0;
+        left:0;
+        width:100%;
+        height:100%;
+        object-fit: cover;
+    }
+    #navbar {
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top:2%;
+        left:4%;
+        width: 92%;
+        height: 6%;
+        background-color: #0a152b;
+        z-index: 1000;
+    }
+    #nav-links {
+        position: inherit;
+        right: 6%;
+        display: flex;
+        font-size: 14px;
+        gap: 5px;
+    }
+    #nav-links a {
+        font-family: "Bad Script", serif;
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+    }
+    #title_wrap {
+        position: inherit;
+        font-size: 24px;
+        color: white;
+        left:6%;
+    }
+    #wrapper {
+        position: absolute;
+        top:35%;
+        right: 5%;
+    }
+    #wrapper .parallax-wrapper {
+        position: relative;
+        border-radius: 50%;
+        height: 250px;
+        width: 250px;
+        
+        background-color: #ffffff; 
+        overflow: hidden; 
+        z-index: 2;
+    }
+    .parallax {
+        position: absolute;
+        width: 120%;
+        height: 120%;
+        top: -10%;  
+        left: -10%;
+        object-fit: cover; 
+        transition: transform 0.1s ease-out; 
+        z-index: 2;
+    }
+    #social-links {
+        position: absolute;
+        top:102%;
+        width: 100%;
+        justify-content: center;
+        z-index: 3;
+        gap: 2%;
+        display:flex;
+    }
+    
+    #social-links img {
+        width: 40px;
+        height: auto;
+    }
+    
+    
+    
+    
+    .front-text {
+        position: absolute;
+        top:40%;
+        width: 100%;
+        left:5%;
+        font-family: "Sigmar", serif;
+    
+        
+    }
+    .front-text h1 {
+        justify-content: center;
+        font-size: 24px;
+        color: rgb(241, 139, 170);
+        
+    }
+    .front-text .firstline {
+        position: absolute;
+        font-size: 40px;
+        font-family: "Sour Gummy", serif;
+        color: rgb(255, 255, 255);
+        top: 0px;
+        
+    }
+    .front-text .secondline {
+        position: absolute;
+        color: rgb(255, 255, 255);
+        font-family: "Sour Gummy", serif;
+        font-size: 40px;
+        top: 30px;
+        
+    }
+    .front-text .thirdline {
+        position: absolute;
+        color: rgb(255, 255, 255);
+        font-family: "Sour Gummy", serif;
+        top: 60px;
+        font-size: 40px;
+       
+    }
+}
+@media (min-width: 992px) {
+    html, body {
+        position: relative;
+        margin:0;
+        padding:0;
+        width:100%;
+        height:100%;
+        overflow-x: hidden;
+    }
+   
+    #background {
+        position: absolute;
+        top: 0;
+        left:0;
+        width:100%;
+        height:100%;
+        object-fit: cover;
+    }
+    #navbar {
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top:2%;
+        left:4%;
+        width: 92%;
+        height: 6%;
+        background-color: #0a152b;
+        z-index: 1000;
+    }
+    #nav-links {
+        position: inherit;
+        right: 6%;
+        display: flex;
+        font-size: 14px;
+        gap: 5px;
+    }
+    #nav-links a {
+        font-family: "Bad Script", serif;
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+    }
+    #title_wrap {
+        position: inherit;
+        font-size: 24px;
+        color: white;
+        left:6%;
+    }
+    #wrapper {
+        position: absolute;
+        top:35%;
+        right: 5%;
+    }
+    #wrapper .parallax-wrapper {
+        position: relative;
+        border-radius: 50%;
+        height: 300px;
+        width: 300px;
+        
+        background-color: #ffffff; 
+        overflow: hidden; 
+        z-index: 2;
+    }
+    .parallax {
+        position: absolute;
+        width: 120%;
+        height: 120%;
+        top: -10%;  
+        left: -10%;
+        object-fit: cover; 
+        transition: transform 0.1s ease-out; 
+        z-index: 2;
+    }
+    #social-links {
+        position: absolute;
+        top:102%;
+        width: 100%;
+        justify-content: center;
+        z-index: 3;
+        gap: 2%;
+        display:flex;
+    }
+    
+    #social-links img {
+        width: 40px;
+        height: auto;
+    }
+    
+    
+    
+    
+    .front-text {
+        position: absolute;
+        top:40%;
+        width: 100%;
+        left:5%;
+        font-family: "Sigmar", serif;
+    
+        
+    }
+    .front-text h1 {
+        justify-content: center;
+        font-size: 24px;
+        color: rgb(241, 139, 170);
+        
+    }
+    .front-text .firstline {
+        position: absolute;
+        font-size: 40px;
+        font-family: "Sour Gummy", serif;
+        color: rgb(255, 255, 255);
+        top: 0px;
+        
+    }
+    .front-text .secondline {
+        position: absolute;
+        color: rgb(255, 255, 255);
+        font-family: "Sour Gummy", serif;
+        font-size: 40px;
+        top: 30px;
+        
+    }
+    .front-text .thirdline {
+        position: absolute;
+        color: rgb(255, 255, 255);
+        font-family: "Sour Gummy", serif;
+        top: 60px;
+        font-size: 40px;
+       
+    }
+    #particles-js {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 65%;
+        transform: scale(0.1);
+        opacity: 0;
+        transition: all .5s ease-out;
+        z-index: 1;
+    }
+    #particles-js.loaded {
+        transform: scale(1);
+        opacity: 1;
+    }
+    
+}
