@@ -11,6 +11,8 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="css/redo/home.css">
     <link rel="stylesheet" href="css/redo/about.css">
+    <link rel="stylesheet" href="css/redo/proj.css">
+    <link rel="stylesheet" href="css/redo/contact.css">
     <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
     </head>
 <body>
@@ -99,6 +101,79 @@
     <div class="download">Download My Resume</div>
     <a href="assets/Resume.pdf" class = "resume" download>Here</a>
 </div>
+
+
+<div id="projects_">
+    <div class="proj_title">02 Projects</div>
+    <a href="https://github.com/Dylanlang04" target="_blank" class="gitlink">You can find all the source code to my projects on GitHub here.</a>
+    <div class="collage-container">
+        <button class="arrow left-arrow" onclick="scrollCollage(-1)"><svg viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg" transform="matrix(-1, 0, 0, 1, 0, 0)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M78.78 247.251C111.354 243.109 136.672 240.07 154.736 238.134C175.79 235.879 192.168 234.567 203.869 234.2L199.547 268.136L194.841 295C231.551 267.291 259.569 247.024 278.894 234.2C298.218 221.376 317.92 209.976 338 200C325.082 188.476 309.47 176.232 291.165 163.267C272.859 150.302 243.761 130.879 203.869 105C206.608 121.693 208.47 133.754 209.457 141.184C210.444 148.614 211.16 155.975 211.607 163.267C198.608 161.423 181.279 158.851 159.619 155.55C137.96 152.249 105.42 147.221 62 140.467C65.8066 168.023 67.7099 187.868 67.7099 200C67.7099 212.132 65.8066 228.599 62 249.4" stroke="#000000" stroke-opacity="0.9" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg></button>
+        <div class="collage-track" id="collageTrack">
+          <div class="project">Project 1</div>
+          <div class="project">Project 2</div>
+          <div class="project">Project 3</div>
+          <div class="project">Project 4</div>
+          <div class="project">Project 5</div>
+          <div class="project">Project 5</div>
+          <div class="project">Project 5</div>
+          <div class="project">Project 5</div>
+          <div class="project">Project 5</div>
+        </div>
+        <button class="arrow right-arrow" onclick="scrollCollage(1)"><svg viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg" transform="matrix(1, 0, 0, 1, 0, 0)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M78.78 247.251C111.354 243.109 136.672 240.07 154.736 238.134C175.79 235.879 192.168 234.567 203.869 234.2L199.547 268.136L194.841 295C231.551 267.291 259.569 247.024 278.894 234.2C298.218 221.376 317.92 209.976 338 200C325.082 188.476 309.47 176.232 291.165 163.267C272.859 150.302 243.761 130.879 203.869 105C206.608 121.693 208.47 133.754 209.457 141.184C210.444 148.614 211.16 155.975 211.607 163.267C198.608 161.423 181.279 158.851 159.619 155.55C137.96 152.249 105.42 147.221 62 140.467C65.8066 168.023 67.7099 187.868 67.7099 200C67.7099 212.132 65.8066 228.599 62 249.4" stroke="#000000" stroke-opacity="0.9" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg></button>
+      </div>
+</div>
+
+
+<div id="contact">
+    <form id="contact-form">
+        <div id="title_wrap">
+            <div class="title">Send your contact info directly to me: </div>
+        </div>
+        
+        
+        <input type="hidden" name="time" value="Mar 10 2025 08:46">
+        
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" name="name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="info">(Optional) Other info:</label>
+            <div class="textarea-wrapper">
+                <textarea id="info" name="info" rows="4" maxlength="200"></textarea>
+                <span id="char-count">200</span>
+            </div>
+        </div>
+        <div id="sub_wrap">
+            <input id="sub_btn" type="submit" value="Send">
+        </div>
+        
+    </form>
+
+    <div class="contact_title">03 Contact Me</div>
+    <div id="my_info">
+        <div class="prompt">You can contact me at:</div>
+        <div id="email_wrap">
+            
+            <div class="par2">email: </div>
+            <a href="mailto:dylanlangtrade@gmail.com" class="cont_email">dylanlangtrade@gmail.com</a>
+        </div>
+        <div id="phone_wrap">
+            <div class="par3">phone/sms:</div>
+            <div class="phone">705-977-6917</div>
+        </div>
+        <div id="linkdln_wrap">
+            <div class="par4">linkdln:</div>
+            <a href="https://www.linkedin.com/in/dylan-langlois-06576030b/" target="_blank" class="cont_linkdn">here</a>
+        </div>
+    </div>  
+
+</div>
+
 
 <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 <script src='/js/email.js'></script>
