@@ -1,6 +1,7 @@
+@media (min-width: 1200px) {
 #contact {
     position: absolute;
-    top: 268%;
+    top: 2680px;
     left: 0px;
     background-color: #000000;
     width: 100%;
@@ -150,4 +151,5 @@
     justify-content: right;
 }
 
+}
 
