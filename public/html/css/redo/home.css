@@ -1,26 +1,12 @@
 
-#particles-js {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 65%;
-    transform: scale(0.1);
-    opacity: 0;
-    transition: all .5s ease-out;
-    z-index: 1;
-}
-#particles-js.loaded {
-    transform: scale(1);
-    opacity: 1;
-}
+
 @media (max-width: 599.98px) {
     html, body {
         position: relative;
         margin:0;
         padding:0;
         width:100%;
-        height:100%;
+        height:1080px;
         overflow-x: hidden;
     }
    
@@ -29,7 +15,7 @@
         top: 0;
         left:0;
         width:100%;
-        height:100%;
+        height:60%;
         object-fit: cover;
     }
     #navbar {
@@ -68,7 +54,7 @@
         width:100%;
         display: flex;
         justify-content: center;
-        top:55%;
+        top:30%;
         
     }
     #wrapper .parallax-wrapper {
@@ -112,7 +98,7 @@
     
     .front-text {
         position: absolute;
-        top:25%;
+        top:15%;
         width: 100%;
         display:flex;
         justify-content: center;
@@ -166,7 +152,7 @@
         margin:0;
         padding:0;
         width:100%;
-        height:100%;
+        height:1080px;
         overflow-x: hidden;
     }
    
@@ -175,7 +161,7 @@
         top: 0;
         left:0;
         width:100%;
-        height:100%;
+        height:70%;
         object-fit: cover;
     }
     #navbar {
@@ -214,7 +200,7 @@
         width:100%;
         display: flex;
         justify-content: center;
-        top:55%;
+        top:35%;
         
         
     }
@@ -259,7 +245,7 @@
     
     .front-text {
         position: absolute;
-        top:27%;
+        top:17%;
         width: 100%;
         display:flex;
         justify-content: center;
@@ -307,7 +293,7 @@
         margin:0;
         padding:0;
         width:100%;
-        height:100%;
+        height:1080px;
         overflow-x: hidden;
     }
    
@@ -316,7 +302,7 @@
         top: 0;
         left:0;
         width:100%;
-        height:100%;
+        height:60%;
         object-fit: cover;
     }
     #navbar {
@@ -352,7 +338,7 @@
     }
     #wrapper {
         position: absolute;
-        top:35%;
+        top:15%;
         right: 5%;
     }
     #wrapper .parallax-wrapper {
@@ -395,7 +381,7 @@
     
     .front-text {
         position: absolute;
-        top:40%;
+        top:20%;
         width: 100%;
         left:5%;
         font-family: "Sigmar", serif;
@@ -433,13 +419,13 @@
        
     }
 }
-@media (min-width: 992px) and (max-width:1239.98px) {
+@media (min-width: 992px) and (max-width:1199.98px) {
     html, body {
         position: relative;
         margin:0;
         padding:0;
         width:100%;
-        height:100%;
+        height:1080px;
         overflow-x: hidden;
     }
    
@@ -448,7 +434,7 @@
         top: 0;
         left:0;
         width:100%;
-        height:100%;
+        height:80%;
         object-fit: cover;
     }
    
@@ -551,7 +537,7 @@
     }
     
 }
-@media (min-width: 1240px) {
+@media (min-width: 1200px) {
      html, body {
         position: relative;
         margin:0;
