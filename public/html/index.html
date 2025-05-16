@@ -9,22 +9,28 @@
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
     
     <title>Portfolio</title>
-    
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/particles.css">
+    <link rel="stylesheet" href="css/about.css">
     <link rel="stylesheet" href="css/proj.css">
-
-    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <link rel="stylesheet" href="css/contact.css">
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
     </head>
 <body>
 
 <div id="particles-js"></div>
 
 
-<div class="navbar">
-    <b>Dylan's Portfolio</b>
+<div id="navbar">
+    <div id="title_wrap">
+        <p1>Dylan's Portfolio</p1>
+    </div>
+    
 
-    <div class="nav-links">
+    <div id="nav-links">
         <a href="#about_me">About</a>
         
         <a href="#projects_">Projects</a>
@@ -33,29 +39,24 @@
 </div>
 
 
-    <div class="me2"></div>
-    <div class="cutout"></div>
-    <div class="parallax-wrapper">
-        <img src="assets/adf.jpg" class="parallax">
+    <img id="background" src="assets/me.jpg">
+    <div id="wrapper">
+        <div class="parallax-wrapper">
+            <img src="assets/adf.png" class="parallax">
+        </div>
+        <div id="social-links">
+            <a href="https://www.instagram.com/dylan_langlois1/" target="_blank">
+                <img src="assets/instagram-logo.png" alt="Twitter" class="social-icon">
+            </a>
+            <a href="https://www.linkedin.com/in/dylan-langlois-06576030b/" target="_blank" >
+                <img src="assets/l-logo.png" alt="Instagram" class="social-icon">
+            </a>
+            <a href="https://github.com/Dylanlang04" target="_blank">
+                <img src="assets/github-logo.png" alt="GitHub" class="social-icon">
+            </a>
+        </div>
     </div>
-    <div class="social-links">
-        <a href="https://www.instagram.com/dylan_langlois1/" target="_blank">
-            <img src="assets/instagram-logo.png" alt="Twitter" class="social-icon">
-        </a>
-        <a href="https://www.linkedin.com/in/dylan-langlois-06576030b/" target="_blank" >
-            <img src="assets/l-logo.png" alt="Instagram" class="social-icon">
-        </a>
-        <a href="https://github.com/Dylanlang04" target="_blank">
-            <img src="assets/github-logo.png" alt="Facebook" class="social-icon">
-        </a>
-    </div>
-
-
-
-
-
-
-<div class="background"></div>
+    
 
 
 <div class="front-text"> 
@@ -65,6 +66,8 @@
     <p class = "thirdline">student at Carleton</p>
 
 </div>
+
+
 
 <div id="about_me">
     <div class="about">01 About Me</div>
@@ -94,77 +97,98 @@
     <a href="assets/Resume.pdf" class = "resume" download>Here</a>
 </div>
 
+
 <div id="projects_">
     <div class="proj_title">02 Projects</div>
     <a href="https://github.com/Dylanlang04" target="_blank" class="gitlink">You can find all the source code to my projects on GitHub here.</a>
     <div class="collage-container">
-        <button class="arrow left-arrow" onclick="scrollCollage(-1)">&#8592;</button>
+        <button class="arrow left-arrow" onclick="scrollCollage(-1)"><svg viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg" transform="matrix(-1, 0, 0, 1, 0, 0)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M78.78 247.251C111.354 243.109 136.672 240.07 154.736 238.134C175.79 235.879 192.168 234.567 203.869 234.2L199.547 268.136L194.841 295C231.551 267.291 259.569 247.024 278.894 234.2C298.218 221.376 317.92 209.976 338 200C325.082 188.476 309.47 176.232 291.165 163.267C272.859 150.302 243.761 130.879 203.869 105C206.608 121.693 208.47 133.754 209.457 141.184C210.444 148.614 211.16 155.975 211.607 163.267C198.608 161.423 181.279 158.851 159.619 155.55C137.96 152.249 105.42 147.221 62 140.467C65.8066 168.023 67.7099 187.868 67.7099 200C67.7099 212.132 65.8066 228.599 62 249.4" stroke="#000000" stroke-opacity="0.9" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg></button>
         <div class="collage-track" id="collageTrack">
-          <div class="project">Project 1</div>
-          <div class="project">Project 2</div>
-          <div class="project">Project 3</div>
-          <div class="project">Project 4</div>
-          <div class="project">Project 5</div>
-          <div class="project">Project 5</div>
-          <div class="project">Project 5</div>
-          <div class="project">Project 5</div>
-          <div class="project">Project 5</div>
+            <a href=https://github.com/Dylanlang04/Portfolio-Website target="_blank">
+                <img src="assets/DL.png" alt="Project6" class="project">
+            </a>
+            <a href="https://github.com/Dylanlang04/Chord-Transposer" target="_blank">
+                <img src="assets/music.png" alt="Project1" class="project">
+            </a>
+            
+            <a href=https://github.com/Dylanlang04/Song-playlist-webapp target="_blank">
+                <img src="assets/playlist.jpg" alt="Project2" class="project">
+            </a>
+            
+            <a href=https://github.com/Dylanlang04/Real-time-chat-app target="_blank">
+                <img src="assets/chat.jpg" alt="Project3" class="project">
+            </a>
+            
+            <a href=https://github.com/Dylanlang04/tic-tac-toe target="_blank">
+                <img src="assets/ttt.png" alt="Project4" class="project">
+            </a>
+
+            <a href=https://github.com/Dylanlang04/Multiplayer-Curling target="_blank">
+                <img src="assets/curling.png" alt="Project5" class="project">
+            </a>
+            
+        
         </div>
-        <button class="arrow right-arrow" onclick="scrollCollage(1)">&#8594;</button>
+        <button class="arrow right-arrow" onclick="scrollCollage(1)"><svg viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg" transform="matrix(1, 0, 0, 1, 0, 0)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M78.78 247.251C111.354 243.109 136.672 240.07 154.736 238.134C175.79 235.879 192.168 234.567 203.869 234.2L199.547 268.136L194.841 295C231.551 267.291 259.569 247.024 278.894 234.2C298.218 221.376 317.92 209.976 338 200C325.082 188.476 309.47 176.232 291.165 163.267C272.859 150.302 243.761 130.879 203.869 105C206.608 121.693 208.47 133.754 209.457 141.184C210.444 148.614 211.16 155.975 211.607 163.267C198.608 161.423 181.279 158.851 159.619 155.55C137.96 152.249 105.42 147.221 62 140.467C65.8066 168.023 67.7099 187.868 67.7099 200C67.7099 212.132 65.8066 228.599 62 249.4" stroke="#000000" stroke-opacity="0.9" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg></button>
       </div>
 </div>
 
+
 <div id="contact">
+    <div class="contact_title">03 Contact Me</div>
     <form id="contact-form">
-        <div class="test">Send your contact info directly to me: </div>
-        
-        <input type="hidden" name="time" value="Mar 10 2025 08:46">
-        
+        <div id="title_wrap">
+            <div class="title">Send your contact info directly to me: </div>
+        </div>
         <div class="form-group">
             <label for="name">Name:</label>
-            <input type="text" name="name" required>
+            <input type="text" id="name" name="name" class="form-control" required>
+            
         </div>
         <div class="form-group">
             <label for="email">Email:</label>
-            <input type="email" name="email" required>
+            <input type="email" id="email" name="email" class="form-control" required>
         </div>
         <div class="form-group">
             <label for="info">(Optional) Other info:</label>
-            <div class="textarea-wrapper">
-                <textarea id="info" name="info" rows="4" maxlength="200"></textarea>
+            <div class="textarea-wrapper" >
+                <textarea id="info" name="info" rows="4" maxlength="200" class="form-control"></textarea>
                 <span id="char-count">200</span>
             </div>
         </div>
-        <input type="submit" value="Send">
+        <div class="form-group">
+            <label for="submit"></label>
+            <input type="submit" id="submit" name="submit" value="Send" class="form-control">
+        </div>
+        
     </form>
 
     
-        <div class="contact_title">Contact Me</div>
-        <div class="par7">You can contact me at:</div>
-        <div class="par2">email: </div>
-        <a href="mailto:dylanlangtrade@gmail.com" class="cont_email">dylanlangtrade@gmail.com</a> 
-        <div class="par3">phone/sms:</div>
-        <div class="phone">705-977-6917</div>
-        <div class="par4">linkdln:</div>
-        <a href="https://www.linkedin.com/in/dylan-langlois-06576030b/" target="_blank" class="cont_linkdn">here</a>
-        <div class="par5">Discord: </div>
-        <a href="" target="_blank" class="cont_linkdn">here</a>
-    
+    <div id="my_info">
+        <div class="prompt">You can contact me at:</div>
+        <div id="email_wrap">
+            
+            <div class="par2">email: </div>
+            <a href="mailto:dylanlangtrade@gmail.com" class="cont_email">dylanlangtrade@gmail.com</a>
+        </div>
+        <div id="phone_wrap">
+            <div class="par3">phone/sms:</div>
+            <div class="phone">705-977-6917</div>
+        </div>
+        <div id="linkdln_wrap">
+            <div class="par4">linkdln:</div>
+            <a href="https://www.linkedin.com/in/dylan-langlois-06576030b/" target="_blank" class="cont_linkdn">here</a>
+        </div>
+    </div>  
 
-    
-    
 </div>
 
 
-
 <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-
-
-<script src='/js/email.js'></script>
+<script type="module" src='/js/email.js'></script>
 <script src='/js/main.js'></script>
-<script src='js/proj.js'></script>
+<script src='/js/proj.js'></script>
+<script src='/js/app.js'></script>
 <script src="/plugins/particles.js"></script>
 
-
-</body>
 </html>

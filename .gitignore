@@ -1,1 +1,6 @@
 /node_modules
+/unused
+index.html
+test.html
+d.css
+unused.css
