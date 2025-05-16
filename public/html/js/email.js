@@ -2,7 +2,7 @@ import emailjs from 'https://cdn.jsdelivr.net/npm/@emailjs/browser@4/+esm'
 
 
 document.addEventListener('DOMContentLoaded', () => {
-
+    emailjs.init("Q9U38VwJtvtCX5p7H");
     const form = document.getElementById('contact-form')
     if (form) {
        form.addEventListener('submit', function(event) {
